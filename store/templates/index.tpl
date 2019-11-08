@@ -1,0 +1,1 @@
+{include file="layout_page.tpl" component="index_component" page_title="Welcome"}
