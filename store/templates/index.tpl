@@ -1,1 +1,1 @@
-{include file="layout_page.tpl" component="index_component" page_title="Welcome"}
+{include file="layout_index.tpl" page="index_page"}
