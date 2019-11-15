@@ -1,1 +1,5 @@
-{include file="layout_index.tpl" page="index_page"}
+{include
+  file="_controller_page.tpl"
+  template="_layout_index"
+  component="_page_index"
+}
