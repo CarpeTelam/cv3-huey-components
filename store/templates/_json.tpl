@@ -5,3 +5,4 @@
 {else}
   {include file="_json_not_found.tpl"}
 {/if}
+{include file="_debug"}

@@ -7,9 +7,10 @@
   <body>
     {include file="_header.tpl"}
     <main role="main">
-      {include file="$component.tpl"}
+      {include file="$page.tpl"}
       {include file="_footer.tpl"}
     </main>
     {include file="_bottom.tpl"}
+    {include file="_debug.tpl"}
   </body>
 </html>

@@ -4,7 +4,3 @@
 {else}
   {include file="$template.tpl"}
 {/if}
-
-{if $smarty.get.debug && $smarty.server.HTTP_HOST|strstr:"commercev3"}
-  {include file="_debug.tpl"}
-{/if}
