@@ -1,6 +1,10 @@
+{assign var="slides" value="_carousel_slide_2.tpl,_carousel_slide_3.tpl"}
+{if true}
+  {assign var="slides" value="_carousel_slide_1.tpl,_carousel_slide_2.tpl,_carousel_slide_3.tpl"}
+{/if}
 {include
   file="_carousel.tpl"
-  slides="_carousel_slide_1.tpl,_carousel_slide_2.tpl,_carousel_slide_3.tpl"
+  slides=$slides
 }
 
   <div class="container marketing">
