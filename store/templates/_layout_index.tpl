@@ -5,10 +5,14 @@
     {include file="_head.tpl"}
   </head>
   <body>
-    {include file="_header.tpl"}
+    <header>
+      {include file="_header.tpl"}
+    </header>
     <main role="main">
       {include file="$page.tpl"}
-      {include file="_footer.tpl"}
+      <footer class="container">
+        {include file="_footer.tpl"}
+      </footer>
     </main>
     {include file="_scripts.tpl"}
     {include file="_debug.tpl"}

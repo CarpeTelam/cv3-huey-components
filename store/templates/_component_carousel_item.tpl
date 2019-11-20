@@ -1,5 +1,8 @@
+{if !$index}
+  {assign var="item_class" value="active"}
+{/if}
 <div class="carousel-item {$item_class}">
-  <img src="{*$img_prefix*}{$image}" width="100%" height="100%" class="bd-placeholder-img" />
+  <img src="{$img_prefix}{$image}" width="100%" height="100%" class="bd-placeholder-img" />
   <div class="container">
     <div class="carousel-caption {$caption_class}">
       <h1>{$title}</h1>
