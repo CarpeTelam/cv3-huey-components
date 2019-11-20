@@ -1,8 +1,8 @@
-{include file="_top.tpl"}
+{include file="_smarty_config.tpl"}
 <!doctype html>
 <html lang="en">
   <head>
-    {include file="_meta.tpl"}
+    {include file="_head.tpl"}
   </head>
   <body>
     {include file="_header.tpl"}
@@ -10,7 +10,7 @@
       {include file="$page.tpl"}
       {include file="_footer.tpl"}
     </main>
-    {include file="_bottom.tpl"}
+    {include file="_scripts.tpl"}
     {include file="_debug.tpl"}
   </body>
 </html>

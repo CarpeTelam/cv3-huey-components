@@ -1,6 +1,6 @@
-{assign var="slides" value="_carousel_slide_2.tpl,_carousel_slide_3.tpl"}
+{assign var="slides" value="_slide_2,_slide_3"}
 {if true}
-  {assign var="slides" value="_carousel_slide_1.tpl,_carousel_slide_2.tpl,_carousel_slide_3.tpl"}
+  {assign var="slides" value="_slide_1,_slide_2,_slide_3"}
 {/if}
 {include
   file="_carousel.tpl"

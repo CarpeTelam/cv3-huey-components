@@ -1,8 +1,16 @@
 {if $smarty.get.debug && $smarty.server.HTTP_HOST|strstr:"commercev3"}
   <div class="container" id="cv3-debug">
-    <h6>Template Variables</h6>
-    {array_debug}
-    <h6>Smarty Session</h6>
-    {array_debug var=$smarty.session}
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Template Variables</h5>
+        {array_debug}
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Session Variables</h5>
+        {array_debug var=$smarty.session}
+      </div>
+    </div>
   </div>
 {/if}

@@ -1,17 +1,17 @@
 {assign var="carousel_items" value=","|explode:$slides}
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    {assign var="active" value=true}
+    {assign var="indicator_class" value="active"}
     {foreach from=$carousel_items key="index" item="carousel_item"}
-      <li data-target="#myCarousel" data-slide-to="{$index}" class="{if $active}active{/if}"></li>
-      {assign var="active" value=false}
+      <li data-target="#myCarousel" data-slide-to="{$index}" class="{$indicator_class}"></li>
+      {assign var="indicator_class" value=""}
     {/foreach}
   </ol>
   <div class="carousel-inner">
-    {assign var="active" value=true}
+    {assign var="item_class" value="active"}
     {foreach from=$carousel_items key="index" item="carousel_item"}
-      {include file=$carousel_item active=$active}
-      {assign var="active" value=false}
+      {include file="$carousel_item.tpl" item_class=$item_class}
+      {assign var="item_class" value=""}
     {/foreach}
   </div>
   <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">

@@ -1,4 +1,4 @@
-<div class="carousel-item {if $active}active{/if}">
+<div class="carousel-item {$item_class}">
   <img src="{*$img_prefix*}{$image}" width="100%" height="100%" class="bd-placeholder-img" />
   <div class="container">
     <div class="carousel-caption {$caption_class}">
