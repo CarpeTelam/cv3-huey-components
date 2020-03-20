@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "clean": "node bin/clean.js",
+    "cv3": "node ../cv3-cli/",
     "dev": "npm run open && watch 'npm run update' store/",
     "extract": "node bin/extract.js",
     "open": "node bin/open.js",
