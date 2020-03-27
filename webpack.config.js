@@ -5,8 +5,8 @@ const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: {
-    _index: "./store/scripts/_index.js",
-    _about: "./store/scripts/_about.js"
+    _index: "./src/scripts/_index.js",
+    _about: "./src/scripts/_about.js"
   },
   mode: "production",
   module: {
